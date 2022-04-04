@@ -7,12 +7,9 @@ var resultsArray = [];
 resultsArray.length = 17;
 
 function checkErrors() {
-  if(display.innerText === 'Error' || display.innerText === 'undefined' || display.innerText === 'NaN'){
-    display.innerText = '';
+  if(display.innerText === 'Error' || display.innerText === 'undefined' || display.innerText === 'NaN' || display.innerText === '' ){
     return true;
-  } 
-  else return false;
-}
+}else return false}
 
 buttons.map( button => {
   button.addEventListener('click', (e) => {
@@ -31,26 +28,21 @@ buttons.map( button => {
         case '=':
             try{
               if(checkErrors() === true ){
-                return null;
+                display.innerText = '';
               }
-              else
+              else{
                 checkErrors();
                 display.innerText = eval(display.innerText);  
                 resultsArray.unshift(display.innerText);
                 results.innerText += resultsArray[0] + '\n'; 
-                  
-                  
-            } catch{
-            display.innerText = 'Error'
+              } }  
+             catch{
+            display.innerText = 'Error';
             }
         break;
 
       default:
           display.innerText += e.target.innerText;
-
-          if(display.innerText.length>=30){
-              display.innerText = '';
-          }
     }
   });
 });
