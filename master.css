@@ -7,7 +7,8 @@
 
 
 .Calculator{
-    width: 40%;
+    width: 60%;
+    height: 610px;
     margin: 10vh auto 0 auto;
     box-shadow: 0px 0px 43px 17px black;
     background-color: grey;
@@ -48,6 +49,7 @@
    text-align: right;
    line-height: 70px;
    vertical-align: middle;
+   border: 5px solid black;
    padding: 16px 8px;
    font-size: 50px;
    border: 1px solid black;
@@ -59,3 +61,52 @@
   #equal{
     color: white;
   }
+
+#last-result{
+  float: left;
+  width: 20%;
+  height: 610px;
+  margin: 0 auto 0 auto;
+  padding: 0 1vh 0 0;
+  line-height: 35px;
+  vertical-align: middle;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  text-align: right;
+  color: white;
+  font-size: 25px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+
+#refresh-results{
+  vertical-align: middle;
+  margin: 10vh 40% auto auto;
+  width: 20%;
+  height: 80px;
+  color: white;
+  background-color: grey;
+  box-shadow: 0px 0px 43px 17px black;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  font-size: 40px;
+}
+
+#refresh-results:hover{
+  background-color: darkgray;
+  cursor: pointer;
+  color: white;
+  border: 1px solid red;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.1,1.1);
+  transition: transform .1s ease-in;
+}
