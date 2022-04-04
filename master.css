@@ -88,16 +88,16 @@
 
 #refresh-results{
   vertical-align: middle;
-  margin: 10vh 40% auto auto;
-  width: 20%;
-  height: 80px;
+  margin: 5vh auto auto auto;
+  width: 40%;
+  height: 100px;
   color: white;
   background-color: grey;
   box-shadow: 0px 0px 43px 17px black;
 
   text-align: center;
   vertical-align: middle;
-  line-height: 80px;
+  line-height: 100px;
   font-size: 40px;
 }
 
